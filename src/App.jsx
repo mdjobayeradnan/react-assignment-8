@@ -2,9 +2,11 @@
 import { Routes,Route,  } from 'react-router'
 import './App.css'
 import Home from './components/Home/Home'
-import About from './components/About/About'
+
 import NavBar from './components/NavBar/NavBar'
 import PageError from './components/PageError/PageError'
+
+import ListedBooks from './components/ListerBooks/ListedBooks'
 
 
 function App() {
@@ -19,11 +21,15 @@ function App() {
 
     <NavBar></NavBar>
 
+
      <Routes>
-      {/* <Route path='/'element={<Home></Home>}/>
+      
+      <Route path='/'element={<Home></Home>}/>
      
-      <Route path='/about'element={<About></About>}/>
-      <Route path='/*'element={<PageError></PageError>}/> */}
+      <Route path='/listBook'element={<ListedBooks></ListedBooks>}/>
+
+
+      <Route path='/*'element={<PageError></PageError>}/>
      </Routes>
   
     </>
